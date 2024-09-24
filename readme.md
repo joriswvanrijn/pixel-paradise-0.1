@@ -4,7 +4,8 @@
 git clone https://github.com/joriswvanrijn/pixel-paradise-0.1
 cd server
 cp .env.example .env # and set CF API KEY (use $$ in key instead of $ to correctly escape key)
-docker compose up # that's it! wait a bit for the first time
+docker compose up -d # that's it! wait a bit for the first time
+docker logs pixelparadise -f # view the logs
 ```
 
 ## Install Client
