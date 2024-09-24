@@ -1,15 +1,15 @@
-## Server
+## Install Server
 
 ```sh
-git clone <this repo>
+git clone https://github.com/joriswvanrijn/pixel-paradise-0.1
 cd server
 cp .env.example .env # and set CF API KEY (use $$ in key instead of $ to correctly escape key)
-docker compose up
+docker compose up # that's it! wait a bit for the first time
 ```
 
-## Client
+## Install Client
 
-Import .zip into forge
+Import .zip into forge and let's goo
 
 ## Development
 
