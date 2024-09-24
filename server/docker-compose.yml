@@ -1,0 +1,36 @@
+services:
+  mc:
+    image: itzg/minecraft-server
+    container_name: pixelparadise
+    ports:
+      # expose the Minecraft server port outside of container
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: AUTO_CURSEFORGE
+      DEBUG: "true"
+      VERSION: "1.20.1"
+      FORGE_VERSION: "47.3.0"
+      REMOVE_OLD_MODS: "TRUE"
+      CF_API_KEY: "${CF_API_KEY:?Provide CF API Key}"
+      # CURSEFORGE_FILES: "@/extras/cf-mods.txt"
+      CF_MODPACK_MANIFEST: "/manifests/manifest.json"
+      CF_SLUG: "pixelparadise01"
+      CF_FORCE_SYNCHRONIZE: TRUE
+      CF_EXCLUDE_MODS: |
+        sodium-options-api
+        dynamiclights-reforged
+        fix-gpu-memory-leak
+        oculus
+        iris-flywheel-compat
+        immediatelyfast
+        biome-music
+        legendary-tooltips
+        food-effect-tooltips-forge
+        modernfix
+    volumes:
+      - ./.minecraft_data:/data
+      - ./mods:/mods:ro
+      - ./config:/config
+      - ./extras:/extras
+      - ./manifest.json:/manifests/manifest.json:ro
