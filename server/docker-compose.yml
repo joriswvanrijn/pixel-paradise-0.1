@@ -16,7 +16,7 @@ services:
       # CURSEFORGE_FILES: "@/extras/cf-mods.txt"
       CF_MODPACK_MANIFEST: "/manifests/manifest.json"
       CF_SLUG: "pixelparadise01"
-      CF_FORCE_SYNCHRONIZE: TRUE
+      CF_FORCE_SYNCHRONIZE: "TRUE"
       CF_EXCLUDE_MODS: |
         sodium-options-api
         dynamiclights-reforged
