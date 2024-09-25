@@ -1,1 +1,1 @@
-- [ ] Sleeping bag https://www.curseforge.com/minecraft/mc-mods/sleeping-bag
+- Update script maken voor server updates
