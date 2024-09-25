@@ -1,1 +1,6 @@
 - Update script maken voor server updates
+- Makkelijk elkaar kunnen vinden mod
+- Extra slot voor backup ipv chestplate
+- Mod dat je ziet welk block het is
+- Biomes zien
+- Elkaar pingen?
