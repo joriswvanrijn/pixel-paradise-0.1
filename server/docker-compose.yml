@@ -5,6 +5,7 @@ services:
     ports:
       # expose the Minecraft server port outside of container
       - "25565:25565"
+    restart: unless-stopped
     environment:
       EULA: "TRUE"
       TYPE: AUTO_CURSEFORGE

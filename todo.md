@@ -4,3 +4,7 @@
 - Mod dat je ziet welk block het is
 - Biomes zien
 - Elkaar pingen?
+- Better END
+- Better Nether
+- World Map
+- Grote chests mod
