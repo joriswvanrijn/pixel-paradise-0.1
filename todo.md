@@ -8,3 +8,4 @@
 - Better Nether
 - World Map
 - Grote chests mod
+- Server config behouden 
